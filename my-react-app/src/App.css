@@ -1,0 +1,108 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 90px;
+}
+
+header nav ul a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 350;
+    margin-right: 50px;
+    color: white;
+}
+
+header nav ul a:hover{
+    text-decoration: underline ;
+}
+
+header h1{
+    font-size: 45px;
+    display: inline-block;
+    margin-right: 50px;
+    color: rgb(185, 252, 85);
+    display: inline;
+    letter-spacing: -2px;
+}
+
+button{
+    padding: 9px 25px;
+    margin-right: 15px;
+    border-radius: 50px;
+    background-color: rgb(185, 252, 85);
+    border-style: groove;
+    box-shadow: 1.5px 1.5px black;
+    font-weight: 550;
+    font-size: 15px;
+    font-weight: 510;
+    letter-spacing: 2.1px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+.hero{
+    height: 85vh;
+}
+.hero h1{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 270px;
+    color: white;
+    letter-spacing: -10px;
+    margin-top: 3rem;
+    max-height: 22rem;
+}
+
+.hero h1 span{
+    font-family: 'Tahoma',sans-serif;
+}
+
+.hero h2{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    word-spacing: -5px;
+    max-height: 3.8rem;
+}
+.hero h3{
+    display: flex;
+    justify-content: center;
+    font-size: 55px;
+    font-weight: 500;
+    color: white;
+    font-style: italic;
+}
+.about-me{
+    height: 100vh;
+    background-color: rgba(238, 239, 251, 0.888);
+}
+
+.about-me h1{
+    display: flex;
+    padding-top: 5.5rem;
+    margin-left: 9rem;
+    font-size: 100px;
+    max-width: 510px;
+    color: rgb(50, 50, 50);
+}
+
+.about-me p{
+    max-width: 500px;
+    margin-top: 1rem;
+    margin-left: 9rem;
+    font-size: 21px;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+
+.about-me img{
+    position: absolute;
+    right: 225px;
+    top: 115vh;
+    height: 550px;
+}
