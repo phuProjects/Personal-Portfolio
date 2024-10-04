@@ -106,16 +106,20 @@ button:hover{
     top: 115vh;
     height: 550px;
 }
-
-.resume-page{
-    height: 100vh;
-    background-color: rgb(40, 40, 48);
-    color: white;
-}
-
 .projects-page{
     height: 100vh;
-    background-color: rgba(238, 239, 251, 0.888);
-    color: rgb(50, 50, 50);
+    background-color: rgb(40, 40, 48);
+    color: rgba(238, 239, 251, 0.888);
 }
+
+.card{
+    border: 1px solid white;
+    max-width: 300px;
+    text-align: center; 
+    padding: 30px;
+    margin: 150px;
+    display: inline-block;
+}
+
+
 
