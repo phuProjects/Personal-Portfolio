@@ -80,6 +80,7 @@ button:hover{
 .about-me{
     height: 100vh;
     background-color: rgba(238, 239, 251, 0.888);
+    color: rgb(50, 50, 50);
 }
 
 .about-me h1{
@@ -88,7 +89,6 @@ button:hover{
     margin-left: 9rem;
     font-size: 100px;
     max-width: 510px;
-    color: rgb(50, 50, 50);
 }
 
 .about-me p{
@@ -106,3 +106,16 @@ button:hover{
     top: 115vh;
     height: 550px;
 }
+
+.resume-page{
+    height: 100vh;
+    background-color: rgb(40, 40, 48);
+    color: white;
+}
+
+.projects-page{
+    height: 100vh;
+    background-color: rgba(238, 239, 251, 0.888);
+    color: rgb(50, 50, 50);
+}
+
