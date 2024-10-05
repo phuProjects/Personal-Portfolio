@@ -45,40 +45,38 @@ button:hover{
 .hero{
     height: 85vh;
 }
-.hero h3{
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 50px;
-    color: white;
-    margin-top: 3rem;
-    line-height: 3;
-
-}
-.hero h2{
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 50px;
-    color: white;
-    line-height: 0.5;
-}
-
-.hero h3 span{
-    font-family: 'Tahoma',sans-serif;
-}
-
 .hero h1{
     display: flex;
     justify-content: center;
+    font-weight: bold;
     font-size: 270px;
     color: white;
-    word-spacing: -25px;
     letter-spacing: -10px;
-    line-height: 0.8;
-    
+    margin-top: 3rem;
+    max-height: 22rem;
 }
 
+.hero h1 span{
+    font-family: 'Tahoma',sans-serif;
+}
+
+.hero h2{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    word-spacing: -5px;
+    max-height: 3.8rem;
+}
+.hero h3{
+    display: flex;
+    justify-content: center;
+    font-size: 55px;
+    font-weight: 500;
+    color: white;
+    font-style: italic;
+}
 .about-me{
     height: 100vh;
     background-color: rgba(238, 239, 251, 0.888);
