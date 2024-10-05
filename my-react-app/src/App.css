@@ -4,8 +4,17 @@ header{
     align-items: center;
     margin: 20px 90px;
 }
+header nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-header nav ul a{
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a{
     text-decoration: none;
     font-size: 18px;
     font-weight: 350;
@@ -13,7 +22,7 @@ header nav ul a{
     color: white;
 }
 
-header nav ul a:hover{
+header nav ul li a:hover{
     text-decoration: underline ;
 }
 
@@ -112,14 +121,122 @@ button:hover{
     color: rgba(238, 239, 251, 0.888);
 }
 
-.card{
-    border: 1px solid white;
-    max-width: 300px;
-    text-align: center; 
-    padding: 30px;
-    margin: 150px;
-    display: inline-block;
+.projects-page .project-headline{
+    display: flex;
+    justify-content: center;
+    padding: 2.2rem;
 }
 
+.projects-page .project-headline h1{
+    font-size: 50px;
+}
 
+.projects-page .project-headline h1 span{
+    font-family: 'Tahoma',sans-serif;
+}
+.card{
+    border: 1px solid white;
+    border-radius: 20px;
+    max-width: 500px;
+    margin-left: 150px;
+    padding-bottom: 100px;
+    padding: 0px 15px 50px 15px;
+    display: inline-block;
+    height: 30rem;
+    vertical-align: top;
+    box-shadow: 5px 5px 5px rgb(32, 31, 31);
+}
+.card h2{
+    font-size: 30px;
+}
+.card h3{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.card p{
+    font-size: 18px;
+    padding-bottom: 15px;
+}
 
+footer{
+    background-color: #111;
+    line-height: 0;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}

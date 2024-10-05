@@ -1,13 +1,11 @@
 
-export default function Project_card(){
+export default function Project_card({name, date, description}){
 
     return(
         <div className="card">
-            <h2>Name</h2>
-            <p>Lorem Ipsum is simply dummy text of 
-                the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's 
-                standard dummy text ever since the 1500s, </p>
+            <h2>{name}</h2>
+            <h3>{date}</h3>
+            <p>{description}</p>
         </div>
     )
 }
