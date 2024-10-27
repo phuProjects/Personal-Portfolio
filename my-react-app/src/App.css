@@ -86,77 +86,131 @@ button:hover{
     color: white;
     font-style: italic;
 }
-.about-me{
+.about-me {
     height: 100vh;
-    background-color: rgba(238, 239, 251, 0.888);
+    background-color: rgba(238, 239, 251, 0.9);
     color: rgb(50, 50, 50);
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 2rem; /* Add padding around the section */
+    text-align: left; /* Align text to the left */
 }
 
-.about-me h1{
-    display: flex;
-    padding-top: 5.5rem;
-    margin-left: 9rem;
+.about-me h1 {
     font-size: 100px;
     max-width: 510px;
+    margin-right: 2rem; /* Add space between heading and image */
 }
 
-.about-me p{
+.about-me p {
     max-width: 500px;
-    margin-top: 1rem;
-    margin-left: 9rem;
+    margin: 1rem 20px; /* Add vertical margin of 1rem and horizontal margin of 20px */
     font-size: 21px;
     line-height: 35px;
     letter-spacing: 1px;
 }
 
-.about-me img{
-    position: absolute;
-    right: 225px;
-    top: 115vh;
+.about-me img {
     height: 550px;
+    max-width: 100%; /* Ensure the image is responsive */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 20px; /* Optional: Add rounded corners to the image */
 }
-.projects-page{
+
+.projects-page {
     height: 100vh;
     background-color: rgb(40, 40, 48);
     color: rgba(238, 239, 251, 0.888);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.projects-page .project-headline{
-    display: flex;
-    justify-content: center;
+.projects-page .project-headline {
+    text-align: center;
     padding: 2.2rem;
 }
 
-.projects-page .project-headline h1{
-    font-size: 50px;
+.projects-page .project-headline h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
-.projects-page .project-headline h1 span{
-    font-family: 'Tahoma',sans-serif;
+.projects-page .project-headline h1 span {
+    font-family: 'Tahoma', sans-serif;
+    color: #ffcc00;
 }
-.card{
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid white;
-    border-radius: 20px;
-    max-width: 500px;
-    margin-left: 150px;
-    padding-bottom: 100px;
-    padding: 0px 15px 50px 15px;
-    display: inline-block;
-    height: 30rem;
-    vertical-align: top;
-    box-shadow: 5px 5px 5px rgb(32, 31, 31);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+    margin-bottom: 10px; /* Added margin for vertical spacing */
 }
-.card h2{
-    font-size: 30px;
+
+.card:hover {
+    transform: scale(1.05);
 }
-.card h3{
-    font-size: 20px;
-    padding-bottom: 10px;
+
+.card h2 {
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
 }
-.card p{
-    font-size: 18px;
-    padding-bottom: 15px;
+
+.card h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #ffcc00;
 }
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .projects-page .project-headline h1 {
+        font-size: 2.5rem;
+    }
+    .card h2 {
+        font-size: 1.5rem;
+    }
+    .card h3 {
+        font-size: 1rem;
+    }
+}
+
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .projects-page .project-headline h1 {
+        font-size: 2.5rem; /* Responsive font size */
+    }
+    .card h2 {
+        font-size: 1.5rem; /* Responsive font size */
+    }
+    .card h3 {
+        font-size: 1rem; /* Responsive font size */
+    }
+}
+
 
 footer{
     background-color: #111;
