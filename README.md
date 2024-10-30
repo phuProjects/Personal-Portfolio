@@ -15,7 +15,7 @@ I'm currently pursuing a degree in Computer Science at George Mason University, 
 - Tools: Git
 
 ## Contact Me
-Feel free to reach out to me via [Email](phu3262006@gmail.com) or connect with me on [www.linkedin.com/in/phu-le-7a5260281.
+Feel free to reach out to me via Email @ phu3262006@gmail.com or connect with me on [www.linkedin.com/in/phu-le-7a5260281.
 
 ## License
 This project is licensed under the MIT License.
